@@ -1,0 +1,42 @@
+---
+import MaxWidth from "../layouts/MaxWidth.astro";
+import ContactoInput from "./ContactoInput.astro";
+---
+
+<section id="contacto" class="relative pt-[120px] sm:pt-[220px] pb-[80px] bg-colorBeig overflow-hidden">
+    <svg 
+    class="absolute top-0 w-full" 
+    viewBox="0 0 2560 200" 
+    preserveAspectRatio="none"> 
+    <path d="M2334.04 59.5628C2682.72 37.9958 2832.63 103.828 2864 139.44V-226H-346C-310.147 -130.812 -140.291 59.5628 252.303 59.5628C743.047 59.5628 842.764 112.482 1333.51 162.405C1824.25 212.329 1898.2 86.5215 2334.04 59.5628Z" fill="#e38476"></path> 
+   </svg>
+    <MaxWidth>
+        <img 
+        class="bottom-0 max-w-[140%] absolute right-[-200px] md:bottom-[-80px] md:max-w-[750px]"
+        src="/contacto.webp" 
+        alt="contacto">
+        <h2 class="relative z-40 text-colorBlueDark text-left">¡Ponte en contacto!</h2>
+        <form 
+        class="max-w-[400px] relative z-40"
+        action="#" 
+        method="post">
+            <ContactoInput
+            type="text"
+            placeholder="Su nombre completo"
+             />
+            <ContactoInput
+            type="email"
+            placeholder="Su email completo"
+             />
+            <ContactoInput
+            style="h-[100px]"
+            type="text"
+            placeholder="¡Cuéntanos cómo podemos ayudarte!"
+             />
+             <input 
+             class="text-white border-colorBlue border-[1px] border-b-[5px]  pt-[15px] pb-[10px] cursor-pointer px-[35px] rounded-[8px] bg-colorBlueDark hover:opacity-90 duration-200"
+             type="submit" 
+             value="Enviar">
+        </form>
+    </MaxWidth>
+</section>

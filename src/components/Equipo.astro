@@ -1,0 +1,48 @@
+---
+import MaxWidth from "../layouts/MaxWidth.astro"
+import EquipoItems from './EquipoItems.astro'
+---
+
+<section id="equipo" class="bg-colorRose pt-[120px] sm:pt-[220px] pb-[80px] relative">
+    <svg class="absolute top-0 w-full" 
+    viewBox="0 0 2560 200" 
+    preserveAspectRatio="none"> 
+    <path d="M473 60.0001C161.8 38.4001 28 104.333 0 140V-226H2865C2833 -130.667 2681.4 60.0001 2331 60.0001C1893 60.0001 1804 113 1366 163C928 213 862 87.0001 473 60.0001Z" fill="#28338b"></path> 
+    </svg>
+    <MaxWidth>
+        <h2 class="text-white">¡Conoce al equipo!</h2>
+        <picture class="w-full">
+            <img 
+            class="w-full"
+            src="/equipo.webp" 
+            alt="Esto puede ser una imagen">
+        </picture>
+        <div class="flex flex-wrap md:flex-nowrap gap-[30px] mt-[80px] items-center">
+            <div class="w-full md:w-[50%] bg-colorBeig p-[24px] rounded-[20px] border-colorBlue boder-b-[5px]">
+                <p class="mb-[20px]">Somos un equipo experimentado de constructores con más de 5 años de experiencia en la gestión de infraestructura de nivel institucional para empresas de la lista Fortune 100.</p>
+                <p>A través del staking sostenible, los nodos autorreparables y las ubicaciones exóticas de los servidores, estamos liderando la industria para construir una infraestructura de nodos más diversificada y ecológica.</p>
+            </div>
+            <div class="w-full md:w-auto">
+                <EquipoItems
+                img="/team-1.webp"
+                title="Dibujó"
+                info="Director de Operaciones de Nodos y Protocolo"
+
+                 />
+                <EquipoItems
+                img="/team-2.webp"
+                title="Arcilla"
+                info="Operaciones Comerciales y Marketing"
+
+                 />
+                <EquipoItems
+                img="/team-3.webp"
+                title="Ajolote anon"
+                info="Director de Operaciones de Nodos"
+
+                 />
+            </div>
+        </div>
+
+    </MaxWidth>
+</section>

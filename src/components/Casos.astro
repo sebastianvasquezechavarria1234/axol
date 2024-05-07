@@ -1,0 +1,46 @@
+---
+import MaxWidth from "../layouts/MaxWidth.astro"
+import CasosCard from "./CasosCard.astro"
+---
+
+<section id="casos-de-uso" class="pt-[120px] pb-[80px] sm:pt-[250px] bg-colorBlueDark relative">
+    <svg class="absolute top-0 w-full" 
+    viewBox="0 0 2560 200" 
+    preserveAspectRatio="none"> 
+    <path d="M2334.04 59.5628C2682.72 37.9958 2832.63 103.828 2864 139.44V-226H-346C-310.147 -130.812 -140.291 59.5628 252.303 59.5628C743.047 59.5628 842.764 112.482 1333.51 162.405C1824.25 212.329 1898.2 86.5215 2334.04 59.5628Z" fill="#58a1c6"></path> 
+   </svg>
+    <MaxWidth>
+        <div class="text-white">
+            <h2>Casos de uso</h2>
+        </div>
+        <div class="flex flex-wrap gap-[20px]">
+            <CasosCard
+            style="lg:w-[59.6%] w-[100%]"
+            title="Venta al por menor"
+            svg="/casos-1.svg"
+            info="Maximice estratégicamente el potencial de crecimiento con nuestros discretos paquetes de agricultura de airdrop diseñados específicamente para redes de prueba incentivadas." 
+            />
+            <CasosCard
+            style="lg:w-[38%] w-[100%]"
+            title="Venta al por menor"
+            svg="/casos-2.svg"
+            info="Realice staking sin custodia a través de la delegación de tokens a nuestros validadores." 
+            />
+            <CasosCard
+            style="lg:w-[38%] w-[100%]"
+            title="Mineros de Bitcoin"
+            svg="/casos-3.svg"
+            info="Obtenga sin problemas rendimiento en Bitcoin apostado a través de nuestras soluciones innovadoras." 
+            />
+            <CasosCard
+            style="lg:w-[59.6%] w-[100%]"
+            title="Fundamentos del protocolo"
+            svg="/casos-4.svg"
+            info="Diversifique y fortalezca su conjunto de validadores aprovechando nuestra infraestructura neutra en carbono en LATAM." 
+            />
+        </div>
+    </MaxWidth>
+
+</section>
+
+

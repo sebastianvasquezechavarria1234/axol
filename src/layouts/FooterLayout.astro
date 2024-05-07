@@ -1,0 +1,65 @@
+---
+import MaxWidth from "./MaxWidth.astro";
+import FooterLayoutCard from './FooterLayoutCard.astro'
+import Logo from "../components/Logo.astro";
+---
+
+<footer class="relative bg-colorRose pt-[120px] sm:pt-[220px] pb-[120px]">
+    <svg 
+    class="absolute top-0 w-full" 
+    viewBox="0 0 2560 200" 
+    preserveAspectRatio="none"> 
+    <path d="M473 60.0001C161.8 38.4001 28 104.333 0 140V-226H2865C2833 -130.667 2681.4 60.0001 2331 60.0001C1893 60.0001 1804 113 1366 163C928 213 862 87.0001 473 60.0001Z" fill="#ffcd9c"></path> 
+    </svg>
+    <MaxWidth
+    style="flex flex-wrap"
+    >
+
+    <div class="w-full flex-wrap sm:flex justify-between mb-[80px]">
+        <a href="/">
+            <Logo
+            style="w-[150px] h-[80px] mb-[30px] sm:mb-[0px]"
+            />
+        </a>
+        <div class="flex gap-[10px]">
+            <a href="/">
+               <img 
+               src="/icon-x.svg" 
+               alt="icon x">
+            </a>
+            <a href="/">
+               <img 
+               src="/icon-x.svg" 
+               alt="icon x">
+            </a>
+            <a href="/">
+               <img 
+               src="/icon-x.svg" 
+               alt="icon x">
+            </a>
+        </div>
+
+     </div>
+        <FooterLayoutCard
+        title="Ajolote"
+        subtitle="/aksəlɒt(ə)l/"
+        info="Salamandra mexicana que en condiciones naturales conserva su Las larvas se forman a lo largo de la vida, pero son capaces de reproducirse. Destacan por sus propiedades autocurativas."
+         />
+        <FooterLayoutCard
+        title="Staking sostenible"
+        subtitle="/səstenəb(ə)l steking/"
+        info="El acto de utilizar energía renovable y negocios eficientes en capital construir una infraestructura que sustente los cambios en la condiciones climáticas y de mercado."
+         />
+        <FooterLayoutCard
+        title="Nodos autorreparables"
+        subtitle="/sɛɫf.hiɫŋ. noʊdz//"
+        info="Salamandra mexicana que en condiciones naturales conserva su Las larvas se forman a lo largo de la vida, pero son capaces de reproducirse. Destacan por sus propiedades autocurativas."
+         />
+        <FooterLayoutCard
+        title="Nodos autorreparables"
+        subtitle="/sɛɫf.hiɫŋ. noʊdz//"
+        info="Derechos de autor reservados ©️ 2023 Desarrollo y Diseñado por sebas ¡FICTISIO!"
+         />
+    </MaxWidth>
+
+</footer>

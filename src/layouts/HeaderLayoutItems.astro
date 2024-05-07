@@ -1,0 +1,12 @@
+---
+const {href, tabTitle, target} = Astro.props;
+---
+
+<a 
+class="px-[10px] flex relative justify-center [&>span]:hover:opacity-100" 
+href={href}
+target={target}
+>
+{tabTitle}
+<span class="absolute block w-[80%] h-[3px] bottom-[-3px] bg-colorBlueDark opacity-0 duration-[.3s]"></span>
+</a>

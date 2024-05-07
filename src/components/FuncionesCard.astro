@@ -1,0 +1,23 @@
+---
+const {img} = Astro.props
+const {title} = Astro.props
+const {info} = Astro.props
+---
+
+<article class="relative">
+    <picture class="bg-colorBlueDark rounded-[20px] flex justify-center items-cente p-[20px]">
+        <img
+        class="w-[90%]"
+        src={img} 
+        alt="funciones-1">
+    </picture>
+    <h4 class="absolute w-[90%] justify-center sm:w-auto text-center inline-flex bg-colorBeig text-colorBlueDark py-[10px] px-[25px] rounded-full translate-y-[-30px] left-[50%] translate-x-[-50%] border-[var(--blue-dark)] border-[1px] border-b-[5px]">
+        {title}
+    </h4>
+    <p class="text-center text-white max-w-[80%] mx-auto mt-[80px]">
+        {info}
+    </p>
+</article>
+
+<style>
+</style>

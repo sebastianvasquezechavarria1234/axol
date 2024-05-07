@@ -1,0 +1,66 @@
+---
+import Logo from "../components/Logo.astro";
+import HeaderLayoutItems from "./HeaderLayoutItems.astro";
+import HeaderLayoutMn from "./HeaderLayoutMn.astro";
+---
+
+<header class="fixed bg-colorBeig mt-[40px] left-[50%] translate-x-[-50%] py-[15px] px-[20px] border-colorBlue border-b-[5px] border-[1px] rounded-full text-colorBlueDarka z-50 w-[90%] xl:w-auto">
+    <nav>
+        <ul 
+        class="gap-[10px] justify-center items-center flex"
+        >
+            <li>
+                <HeaderLayoutItems 
+                href="/#funciones"
+                tabTitle="funciones"
+                />
+            </li> 
+            <li>
+                <HeaderLayoutItems 
+                href="/#casos-de-uso"
+                tabTitle="Casos de uso"
+                />
+            </li> 
+            <li>
+                <HeaderLayoutItems 
+                href="/#equipo"
+                tabTitle="Equipo"
+                />
+            </li> 
+            <li>
+                <HeaderLayoutItems 
+                href="/#contacto"
+                tabTitle="Contacto"
+                />
+            </li> 
+            <li>
+                <HeaderLayoutItems 
+                href="/Blog"
+                tabTitle="Blog"
+                />
+            </li> 
+            <li>
+                <HeaderLayoutItems 
+                href="/Blog"
+                target="_blank"
+                tabTitle="Grifo"
+                />
+            </li> 
+        </ul>
+        <ul>
+            <li class="">
+                <HeaderLayoutMn/>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    @media screen and (max-width: 750px){
+        header nav ul:nth-child(1){
+            display: none;
+            
+        }
+        
+    }
+</style>

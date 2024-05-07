@@ -1,0 +1,16 @@
+---
+const {style} = Astro.props
+const {type} = Astro.props
+const {placeholder} = Astro.props
+---
+
+<input 
+  class={`
+  ${style}
+  w-full border-colorRose border-b-[5px] rounded-[8px] outline-none p-y[10px] px-[20px] h-[45px] text-[17px] mb-[20px] block
+  `}
+  type={type} 
+  placeholder{placeholder}
+  minlength="5" 
+  maxlength="50" 
+  required>

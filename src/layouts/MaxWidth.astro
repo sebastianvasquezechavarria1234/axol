@@ -1,0 +1,10 @@
+---
+const {style} = Astro.props
+---
+
+<section class={`
+${style}
+max-w-[900px] mx-auto px-[20px] relative
+`}>
+    <slot/>
+</section>

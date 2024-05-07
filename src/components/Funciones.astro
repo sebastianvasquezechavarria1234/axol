@@ -1,0 +1,102 @@
+---
+import MaxWidth from "../layouts/MaxWidth.astro"
+import FuncionesCard from '../components/FuncionesCard.astro'
+---
+
+<section id="funciones" class="bg-colorBlue relative pt-[120px] pb-[80px] sm:pt-[220px] overflow-hidden">
+    <MaxWidth>
+        <div class="flex bg-red">
+            <h2 class="text-white">¿Qué ofrecemos?</h2>
+        </div>
+        <ul class="slider flex items-start gap-[20px] w-[400%] duration-[.5s]">
+            <li class="w-full">
+                <FuncionesCard
+                img="/funciones-1.webp"
+                title="Nodos de marca blanca"
+                info="Externalice su infraestructura de nodos a expertos experimentados mientras promociona sus nodos de marca personal. Ejecutamos infraestructura de nodos de grado institucional como servicio."
+                 />
+            </li>
+            <li class="w-full">
+                <FuncionesCard
+                img="/funciones-2.webp"
+                title="Protocolos y Nodos"
+                info="Obtenga una visión profunda del protocolo y la dinámica del mercado. Gestione la infraestructura de nodos como los profesionales con una consulta 1:"
+                 />
+            </li>
+            <li class="w-full">
+                <FuncionesCard
+                img="/funciones-3.webp"
+                title="Bitcoin DeFi"
+                info="Obtenga rendimiento de su bitcoin con la delegación sin custodia."
+                 />
+            </li>
+            <li class="w-full">
+                <FuncionesCard
+                img="/funciones-4.webp"
+                title="Staking como servicio"
+                info="Delegue en nuestros nodos de alto rendimiento y bajas comisiones."
+                 />
+            </li>
+
+        </ul>
+
+        <div class="flex gap-[10px] mt-[80px]">
+            <span class="slider__span w-[15px] h-[15px] block rounded-full bg-white cursor-pointer hover:scale-150 duration-200"></span>
+            <span class="slider__span w-[15px] h-[15px] block rounded-full bg-white cursor-pointer hover:scale-150 duration-200"></span>
+            <span class="slider__span w-[15px] h-[15px] block rounded-full bg-white cursor-pointer hover:scale-150 duration-200"></span>
+            <span class="slider__span w-[15px] h-[15px] block rounded-full bg-white cursor-pointer hover:scale-150 duration-200"></span>
+        </div>
+    </MaxWidth>
+</section>
+<svg class="absolute top-[100%] w-full" 
+viewBox="0 0 2560 200" 
+preserveAspectRatio="none"> 
+    <path d="M473 60.0001C161.8 38.4001 28 104.333 0 140V-226H2865C2833 -130.667 2681.4 60.0001 2331 60.0001C1893 60.0001 1804 113 1366 163C928 213 862 87.0001 473 60.0001Z" class="red"></path> 
+</svg>
+
+<style>
+    .slider0{
+        transform: translateX(-0%);
+    }
+    .slider1{
+        transform: translateX(-25%);
+    }
+    .slider2{
+        transform: translateX(-50%);
+    }
+    .slider3{
+        transform: translateX(-75%);
+    }
+</style>
+
+<script>
+    var sliderSpan = document.querySelectorAll(".slider__span");
+    var slider = document.querySelector(".slider");
+
+    sliderSpan[0].addEventListener("click", () => {
+        slider.classList.add("slider0");
+        slider.classList.remove("slider1");
+        slider.classList.remove("slider2");
+        slider.classList.remove("slider3");
+    })
+    sliderSpan[1].addEventListener("click", () => {
+        slider.classList.add("slider1");
+        slider.classList.remove("slider0");
+        slider.classList.remove("slider2");
+        slider.classList.remove("slider3");
+    })
+    sliderSpan[2].addEventListener("click", () => {
+        slider.classList.add("slider2");
+        slider.classList.remove("slider0");
+        slider.classList.remove("slider1");
+        slider.classList.remove("slider3");
+    })
+    sliderSpan[3].addEventListener("click", () => {
+        slider.classList.add("slider3");
+        slider.classList.remove("slider0");
+        slider.classList.remove("slider1");
+        slider.classList.remove("slider2");
+    })
+ 
+
+</script>

@@ -1,0 +1,21 @@
+---
+const {style} = Astro.props
+const {title} = Astro.props
+const {info} = Astro.props
+const {svg} = Astro.props
+---
+
+<article  class={`
+${style}
+p-[24px] rounded-[20px] bg-colorPurple border-b-[5px] border-colorBlue
+`}>
+    <h5 class="text-white text-[24px] flex items-center gap-[10px] mb-[20px]">
+        {title}
+        <img 
+        class="w-[30px]"
+        src={svg} 
+        alt="icon">
+    </h5>
+    <p class="text-colorBlue">{info}</p>
+
+</article>

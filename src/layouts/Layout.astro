@@ -1,0 +1,77 @@
+---
+interface Props {
+	title: string;
+}
+
+import { ViewTransitions } from 'astro:transitions';
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator}/>
+		<title>{title}</title>
+		<!-- FONT -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+		<ViewTransitions />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	*{
+		scroll-behavior: smooth;
+	}
+	h2{
+		font-size: 3.3rem;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		line-height: 55px;
+	}
+	h3{
+		font-size: 2.7rem;
+		line-height: 35px;
+	}
+	h4{
+		font-size: 2rem;
+	}
+	a,
+	p{
+		font-size: 19px;
+		opacity: .8;
+	}
+	@media screen and (max-width: 800px){
+		h4{
+			font-size: 20px;
+			line-height: 25px;
+		}
+		
+	}
+	@media screen and (max-width: 600px){
+		h2{
+			font-size: 2rem;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+		h3{
+			font-size: 1.5rem;
+			line-height: 25px;
+		}
+		a,
+		p{
+			font-size: 16px;
+		}
+		
+	}
+</style>
